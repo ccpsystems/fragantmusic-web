@@ -9,9 +9,10 @@
 <meta property="og:description" content="Ministerio musical cristiano dedicado a proclamar el evangelio de Jesucristo a través de la música y la adoración. Muy pronto, nuestra app oficial.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://fragantmusic.com/">
-<meta property="og:image" content="https://fragantmusic.com/logo.jpg">
+<meta property="og:image" content="https://fragantmusic.com/og.jpg">
 <meta name="theme-color" content="#0B0A09">
-<link rel="icon" href="logo.jpg">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital@1&display=swap">
@@ -44,7 +45,7 @@ p{margin:0}
 nav{position:sticky;top:0;z-index:10;background:rgba(11,10,9,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 1rem var(--display)}
-.brand img{width:34px;height:34px;border-radius:8px}
+.brand img{width:30px;height:auto}
 .links{display:flex;gap:22px;font-size:.92rem}
 .links a{text-decoration:none;color:var(--mute)}
 .links a:hover{color:var(--cream)}
@@ -53,7 +54,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem);font-weight:800;line-height:1.02;margin-top:16px}
 .hero p.lede{margin-top:20px;font-size:1.12rem;color:#D8D1C4;max-width:52ch}
 .hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero-logo{justify-self:center;width:min(320px,80%);border-radius:36px;box-shadow:0 30px 90px -30px rgba(224,127,32,.55)}
+.hero-logo{justify-self:center;width:min(300px,75%);filter:drop-shadow(0 20px 60px rgba(224,127,32,.35))}
 
 .soon{margin-block:8px 0;border-radius:24px;padding:28px;background:radial-gradient(120% 140% at 100% 0%,rgba(232,184,42,.22),transparent 55%),var(--s1);border:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
 .soon h3{font-size:1.4rem}
@@ -103,7 +104,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 @media (max-width:900px){
   .hero,.split,.invite{grid-template-columns:1fr}
-  .hero-logo{grid-row:1;width:180px;justify-self:start}
+  .hero-logo{grid-row:1;width:140px;justify-self:start}
   .mvp{grid-template-columns:1fr}
   .songs{grid-template-columns:1fr 1fr}
   .contact{grid-template-columns:1fr 1fr}
@@ -121,7 +122,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="#inicio"><img src="logo.jpg" alt="">Fragant Music</a>
+    <a class="brand" href="#inicio"><img src="logo-claro.png" alt="">Fragant Music</a>
     <div class="links">
       <a href="#historia">Historia</a>
       <a href="#mision">Misión</a>
@@ -145,7 +146,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
           <a class="btn ghost" href="#invitanos">Invitar al ministerio</a>
         </div>
       </div>
-      <img class="hero-logo" src="logo.jpg" alt="Logo oficial de Fragant Music">
+      <img class="hero-logo" src="logo-claro.png" alt="Logo oficial de Fragant Music">
     </header>
 
     <div class="soon">
