@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fragant Music | Música Fragante de Salvación</title>
+<meta name="description" content="Fragant Music es un ministerio musical cristiano de República Dominicana fundado el 4 de noviembre de 2018, dedicado a predicar el evangelio de Cristo a través de la música y la adoración.">
+<meta property="og:title" content="Fragant Music | Música Fragante de Salvación">
+<meta property="og:description" content="Ministerio musical cristiano dedicado a proclamar el evangelio de Jesucristo a través de la música y la adoración. Muy pronto, nuestra app oficial.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fragantmusic.com/">
+<meta property="og:image" content="https://fragantmusic.com/logo.jpg">
+<meta name="theme-color" content="#0B0A09">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital@1&display=swap">
+<style>
+:root{
+  --ink:#0B0A09;--s1:#151311;--s2:#1E1B18;--line:#2E2A25;
+  --cream:#F3F0E8;--mute:#A89F90;--gold:#E8B82A;--orange:#E07F20;
+  --flame:linear-gradient(150deg,var(--gold) 10%,var(--orange) 90%);
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Newsreader",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--cream);font:17px/1.65 var(--body)}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:800}
+p{margin:0}
+.eyebrow{font:600 .74rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.mute{color:var(--mute)}
+.flame{background:var(--flame);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:600;text-decoration:none;font-size:.95rem}
+.btn.primary{background:var(--flame);color:#1a1000}
+.btn.ghost{border:1px solid var(--line);color:var(--cream)}
+.btn:focus-visible{outline:2px solid var(--cream);outline-offset:3px}
+
+nav{position:sticky;top:0;z-index:10;background:rgba(11,10,9,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 1rem var(--display)}
+.brand img{width:34px;height:34px;border-radius:8px}
+.links{display:flex;gap:22px;font-size:.92rem}
+.links a{text-decoration:none;color:var(--mute)}
+.links a:hover{color:var(--cream)}
+
+.hero{padding-block:72px 64px;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem);font-weight:800;line-height:1.02;margin-top:16px}
+.hero p.lede{margin-top:20px;font-size:1.12rem;color:#D8D1C4;max-width:52ch}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-logo{justify-self:center;width:min(320px,80%);border-radius:36px;box-shadow:0 30px 90px -30px rgba(224,127,32,.55)}
+
+.soon{margin-block:8px 0;border-radius:24px;padding:28px;background:radial-gradient(120% 140% at 100% 0%,rgba(232,184,42,.22),transparent 55%),var(--s1);border:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.soon h3{font-size:1.4rem}
+.soon p{margin-top:6px}
+.pill{border:1px solid rgba(232,184,42,.5);color:var(--gold);border-radius:999px;padding:8px 16px;font-weight:600;font-size:.88rem;white-space:nowrap}
+
+section{padding-block:72px;border-top:1px solid var(--line)}
+.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}
+.split .body{display:grid;gap:16px;color:#D8D1C4}
+.quote{font-family:var(--serif);font-style:italic;font-size:1.35rem;color:var(--cream);line-height:1.5}
+
+.mvp{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+.mvp div{background:var(--s1);border-radius:20px;padding:24px;display:grid;gap:10px;align-content:start}
+.mvp h3{font-size:1.15rem}
+.mvp p{color:#D8D1C4;font-size:.96rem}
+
+.values{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.values span{border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:.95rem}
+
+.songs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+.song{background:var(--s1);border-radius:18px;padding:18px;display:grid;gap:12px;align-content:start}
+.song .art{aspect-ratio:1;border-radius:12px;background:var(--flame);display:grid;place-items:center;font:800 2rem var(--display);color:#1a1000}
+.song:nth-child(2) .art{background:linear-gradient(150deg,#3a2c14,#E07F20)}
+.song:nth-child(3) .art{background:linear-gradient(150deg,#F3F0E8,#E8B82A)}
+.song:nth-child(4) .art{background:linear-gradient(150deg,#1E1B18,#E8B82A)}
+.song h3{font-size:1.02rem}
+.song .platforms{display:flex;flex-wrap:wrap;gap:6px;font-size:.8rem}
+.song .platforms a{border:1px solid var(--line);border-radius:999px;padding:4px 10px;text-decoration:none}
+.song .platforms a:hover{border-color:var(--gold)}
+
+.invite{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.invite ul{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.invite li{background:var(--s2);border-radius:10px;padding:6px 12px;font-size:.9rem;color:#D8D1C4}
+.invite .box{background:var(--s1);border-radius:24px;padding:28px;display:grid;gap:14px;justify-items:start}
+
+.verse{text-align:center;padding-block:80px}
+.verse .quote{max-width:34ch;margin:0 auto;font-size:clamp(1.3rem,2.6vw,1.8rem)}
+.verse strong{display:block;margin-top:16px;color:var(--gold);font-weight:600;letter-spacing:.08em}
+
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.contact a,.contact div{background:var(--s1);border-radius:16px;padding:18px;text-decoration:none;display:grid;gap:2px}
+.contact small{color:var(--mute);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+.contact a:hover{background:var(--s2)}
+
+footer{border-top:1px solid var(--line);padding-block:32px;color:var(--mute);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media (max-width:900px){
+  .hero,.split,.invite{grid-template-columns:1fr}
+  .hero-logo{grid-row:1;width:180px;justify-self:start}
+  .mvp{grid-template-columns:1fr}
+  .songs{grid-template-columns:1fr 1fr}
+  .contact{grid-template-columns:1fr 1fr}
+  .links{display:none}
+}
+@media (max-width:520px){
+  .soon{grid-template-columns:1fr}
+  .songs,.contact{grid-template-columns:1fr}
+  section{padding-block:56px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="logo.jpg" alt="">Fragant Music</a>
+    <div class="links">
+      <a href="#historia">Historia</a>
+      <a href="#mision">Misión</a>
+      <a href="#musica">Música</a>
+      <a href="#invitanos">Invítanos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <a class="btn primary" href="https://wa.me/18099069314" target="_blank" rel="noopener" style="padding:8px 16px">WhatsApp</a>
+  </div>
+</nav>
+
+<main id="inicio">
+  <div class="wrap">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Ministerio musical cristiano · República Dominicana</p>
+        <h1>Música <span class="flame">Fragante</span> de Salvación</h1>
+        <p class="lede">Proclamando el evangelio de Jesucristo a través de la alabanza, la adoración y una vida consagrada a Dios.</p>
+        <div class="cta">
+          <a class="btn primary" href="#musica">▶ Escuchar música</a>
+          <a class="btn ghost" href="#invitanos">Invitar al ministerio</a>
+        </div>
+      </div>
+      <img class="hero-logo" src="logo.jpg" alt="Logo oficial de Fragant Music">
+    </header>
+
+    <div class="soon">
+      <div>
+        <p class="eyebrow">Muy pronto</p>
+        <h3>La app oficial de Fragant Music</h3>
+        <p class="mute">Música, videos, agenda de eventos, devocionales y avisos en vivo, todo en tu celular.</p>
+      </div>
+      <span class="pill">iPhone · Android</span>
+    </div>
+  </div>
+
+  <section id="historia">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Nuestra historia</p>
+        <h2 style="margin-top:12px">Desde el 4 de noviembre de 2018</h2>
+      </div>
+      <div class="body">
+        <p><strong>Fragant Music</strong> es un ministerio musical cristiano fundado el 4 de noviembre de 2018 por <strong>Clemente De La Rosa (Clemenlive)</strong>, con el propósito de proclamar el evangelio de Jesucristo mediante una música que refleje santidad, esperanza y amor por las almas.</p>
+        <p>El ministerio nació con la convicción de que la música no es solamente un arte, sino un instrumento sagrado para llevar a las personas a una experiencia más profunda con Cristo.</p>
+        <p class="quote">“Música fragante”: una alabanza que asciende ante Dios como un perfume agradable, nacida de un corazón transformado por el Espíritu Santo.</p>
+        <p>Concebimos la santidad como el perfume espiritual del cristiano. Cuando Cristo se refleja en nuestra vida, su fragancia alcanza a quienes nos rodean.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mision">
+    <div class="wrap">
+      <p class="eyebrow">Lo que nos mueve</p>
+      <h2 style="margin-top:12px">Misión, visión y propósito</h2>
+      <div class="mvp">
+        <div><h3>Misión</h3><p>Conquistar almas para Cristo a través de la alabanza armoniosa, llevando consuelo, esperanza y paz a los abatidos por medio de nuestra música fragante.</p></div>
+        <div><h3>Visión</h3><p>Llevar nuestra música fragante donde el Señor nos guíe, depositando nuestros talentos a disposición de Dios para su honra y gloria.</p></div>
+        <div><h3>Propósito</h3><p>Predicar el evangelio de Cristo a través de la música, velar por la espiritualidad de cada integrante e imitar a Jesús procurando vivir en santidad.</p></div>
+      </div>
+      <div class="values" aria-label="Valores del ministerio">
+        <span>Cristo como centro</span><span>Santidad de vida</span><span>Amor por las almas</span><span>Unidad</span><span>Excelencia</span><span>Responsabilidad</span><span>Integridad</span><span>Servicio</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="musica">
+    <div class="wrap">
+      <p class="eyebrow">Nuestra música</p>
+      <h2 style="margin-top:12px">Escucha a Fragant Music</h2>
+      <p class="mute" style="margin-top:12px;max-width:62ch">Producciones musicales, conciertos, programas de adoración y actividades evangelísticas centradas en Cristo y fundamentadas en las Sagradas Escrituras.</p>
+      <div class="songs">
+        <div class="song"><div class="art">FM</div><h3>Vuelve Cristo</h3>
+          <div class="platforms">
+            <a href="https://open.spotify.com/track/2Ty6GwHaU8Q8qqidTMV8nz" target="_blank" rel="noopener">Spotify</a>
+            <a href="https://music.apple.com/do/album/vuelve-cristo-single/6777728490" target="_blank" rel="noopener">Apple Music</a>
+          </div></div>
+        <div class="song"><div class="art">FM</div><h3>Hay Esperanza en Cristo</h3><div class="platforms"><a href="https://youtube.com/@fragantmusicofficial" target="_blank" rel="noopener">YouTube</a></div></div>
+        <div class="song"><div class="art">FM</div><h3>Gratitud</h3><div class="platforms"><a href="https://youtube.com/@fragantmusicofficial" target="_blank" rel="noopener">YouTube</a></div></div>
+        <div class="song"><div class="art">FM</div><h3>Gracias, Mamá</h3><div class="platforms"><a href="https://youtube.com/@fragantmusicofficial" target="_blank" rel="noopener">YouTube</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="invitanos">
+    <div class="wrap invite">
+      <div>
+        <p class="eyebrow">Invítanos</p>
+        <h2 style="margin-top:12px">¿Quieres a Fragant Music en tu iglesia o actividad?</h2>
+        <p class="mute" style="margin-top:14px">Estamos disponibles dentro y fuera del país para:</p>
+        <ul><li>Programas especiales</li><li>Campañas evangelísticas</li><li>Conciertos</li><li>Congresos</li><li>Servicios de adoración</li><li>Actividades cristianas</li></ul>
+      </div>
+      <div class="box">
+        <p><strong>Escríbenos por WhatsApp</strong></p>
+        <p class="mute">Cuéntanos la fecha, el lugar y el tipo de actividad.</p>
+        <a class="btn primary" href="https://wa.me/18099069314?text=Hola%20Fragant%20Music%2C%20quisiera%20invitarlos%20a%20una%20actividad." target="_blank" rel="noopener">809-906-9314</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="verse">
+    <div class="wrap">
+      <p class="quote">“Entonces nacerá tu luz como el alba, y tu sanidad se dejará ver en seguida; tu justicia irá delante de ti, y la gloria de Jehová será tu retaguardia”.</p>
+      <strong>ISAÍAS 58:8</strong>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <p class="eyebrow">Contacto</p>
+      <h2 style="margin-top:12px">Síguenos y escríbenos</h2>
+      <div class="contact">
+        <div><small>Director</small>Clemente De La Rosa (Clemenlive)</div>
+        <a href="https://wa.me/18099069314" target="_blank" rel="noopener"><small>WhatsApp</small>809-906-9314</a>
+        <a href="https://instagram.com/fragantmusicofficial" target="_blank" rel="noopener"><small>Instagram</small>@fragantmusicofficial</a>
+        <a href="https://youtube.com/@fragantmusicofficial" target="_blank" rel="noopener"><small>YouTube</small>@fragantmusicofficial</a>
+        <a href="https://facebook.com/fragantmusicofficial" target="_blank" rel="noopener"><small>Facebook</small>fragantmusicofficial</a>
+        <a href="https://tiktok.com/@fragantmusicofficial" target="_blank" rel="noopener"><small>TikTok</small>@fragantmusicofficial</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Fragant Music · República Dominicana</p>
+    <p>Música Fragante de Salvación</p>
+  </div>
+</footer>
+
+</body>
+</html>
