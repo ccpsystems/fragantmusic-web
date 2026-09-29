@@ -49,6 +49,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .links{display:flex;gap:22px;font-size:.92rem}
 .links a{text-decoration:none;color:var(--mute)}
 .links a:hover{color:var(--cream)}
+.nav-actions{display:flex;gap:8px}
 
 .hero{padding-block:72px 64px;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
 .hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem);font-weight:800;line-height:1.02;margin-top:16px}
@@ -130,7 +131,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <a href="#invitanos">Invítanos</a>
       <a href="#contacto">Contacto</a>
     </div>
-    <a class="btn primary" href="https://wa.me/18099069314" target="_blank" rel="noopener" style="padding:8px 16px">WhatsApp</a>
+    <div class="nav-actions">
+      <a class="btn ghost" href="https://api.fragantmusic.com/admin" style="padding:8px 16px">Panel</a>
+      <a class="btn primary" href="https://wa.me/18099069314" target="_blank" rel="noopener" style="padding:8px 16px">WhatsApp</a>
+    </div>
   </div>
 </nav>
 
@@ -248,7 +252,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <footer>
   <div class="wrap">
-    <p>© 2026 Fragant Music · República Dominicana</p>
+    <p>© 2026 Fragant Music · República Dominicana · <a href="https://api.fragantmusic.com/admin">Panel del ministerio</a></p>
     <p>Música Fragante de Salvación</p>
   </div>
 </footer>
